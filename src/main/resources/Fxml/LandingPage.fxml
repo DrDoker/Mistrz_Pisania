@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="LPbackground" prefHeight="558.0" prefWidth="781.0" styleClass="LPbackground" stylesheets="@../Css/LPcss.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LandingPageController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="181.0" layoutX="295.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/appLogo1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="119.0" prefHeight="103.0" prefWidth="300.0" text="Mistrz Pisania" textFill="WHITE">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="197.0" prefHeight="25.0" prefWidth="292.0" text="Naucz się pisać szybciej. Weź nasze lekcje drukowania" textFill="WHITE" />
+      <AnchorPane fx:id="subpane" layoutX="91.0" layoutY="321.0" prefHeight="196.0" prefWidth="598.0" styleClass="subpane">
+         <children>
+            <Separator layoutX="294.0" layoutY="37.0" orientation="VERTICAL" prefHeight="131.0" prefWidth="2.0" />
+            <JFXButton fx:id="learnTypingButton" layoutX="59.0" layoutY="104.0" onAction="#goToLessons" prefHeight="47.0" prefWidth="158.0" text="Zacznij się uczyć" textFill="WHITE" />
+            <JFXButton fx:id="quickTestButton" layoutX="371.0" layoutY="104.0" onAction="#goToTest" prefHeight="47.0" prefWidth="158.0" text="Test" textFill="WHITE" />
+            <Label layoutX="31.0" layoutY="25.0" prefHeight="67.0" prefWidth="214.0" text="Przyspiesz swoje postępy w nauce, rozwijaj cenne umiejętności pisania na klawiaturze!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="349.0" layoutY="30.0" prefHeight="67.0" prefWidth="202.0" text="Wykonaj test, aby dowiedzieć się, jaka jest prędkość drukowania!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="infoButton" layoutX="740.0" layoutY="14.0" onAction="#goToInfo" prefHeight="27.0" prefWidth="27.0" text="i">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

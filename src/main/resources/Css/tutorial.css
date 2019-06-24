@@ -1,0 +1,88 @@
+
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+
+.background {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+.lessonChoiceBox{
+    -fx-background-color: white;
+    -fx-border-color: #2F80FF;
+    
+}
+.keyboardButton{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.backspace, .backspace:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #2F80FF;
+    -fx-border-color: none;
+    -fx-font-weight: bold;
+}
+.greenKeys{
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.blueKeys{
+    -fx-background-color: #56CCF2;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.yellowKeys{
+    -fx-background-color: #f1c40f;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.homeKeys{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-border-color: #f1c40f;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    
+}
+.HomeButton {
+    -fx-border-color: #ffffff;
+    -fx-text-fill: white;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+}
+
+.HomeButton:hover{
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2F80FF;
+}
+#warn{
+    -fx-background-color: #ffcdd2;
+}
+#normal{
+    
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="LPbackground" stylesheets="@../Css/LPcss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResultController">
+   <top>
+      <AnchorPane prefHeight="118.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox />
+            <Label layoutX="290.0" layoutY="37.0" prefHeight="54.0" prefWidth="218.0" text="Mistrz Pisania" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="223.0" layoutX="39.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/appLogo1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="482.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="resultHead" layoutX="59.0" layoutY="29.0" prefHeight="66.0" prefWidth="314.0" text="Test zakończony!" textFill="#413f3f">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultBody" layoutX="60.0" layoutY="95.0" prefHeight="47.0" prefWidth="265.0" text="Dobra robota! Zakończyłeś test pisania. Oto twoje wyniki." wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="271.0" fitWidth="286.0" layoutX="415.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/certificate-icon.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="74.0" layoutY="304.0" prefHeight="112.0" prefWidth="652.0" style="-fx-border-color: #ddd; -fx-border-radius: 7;">
+               <children>
+                  <VBox prefHeight="129.0" prefWidth="900.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="217.0" text="Szybkość" textFill="#777777" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="speed" alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="164.0" text="    50">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="92.0" prefWidth="129.0" text="WPM" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="11.0" layoutY="11.0" prefHeight="129.0" prefWidth="900.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="217.0" text="Dokładność" textFill="#777777" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="accuracy" alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="190.0" text="    100">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="92.0" prefWidth="129.0" text="\%" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="172.0" layoutY="11.0" prefHeight="129.0" prefWidth="900.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="217.0" text="Czas" textFill="#777777" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="timeSpent" alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="238.0" text="    3:33">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="92.0" prefWidth="129.0" text="Min" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <JFXButton fx:id="homeButton" layoutX="340.0" layoutY="430.0" onAction="#goHome" prefHeight="38.0" prefWidth="121.0" styleClass="HomeButton" text="Strona główna" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
