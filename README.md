@@ -1,7 +1,6 @@
 # Mistrz_Pisania
 
 The project from the subject of Java. Prz. 2019
-
 JavaFX
 
 ## App Launcher
