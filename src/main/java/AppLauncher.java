@@ -25,6 +25,7 @@ public class AppLauncher extends Application {
             public void handle(WindowEvent t) {
                 Platform.exit();
                 System.exit(0);
+                
             }
         });
     }
