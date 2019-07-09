@@ -12,5 +12,11 @@ JavaFX
 ## Tutorial Result
 ![Иллюстрация к проекту](https://github.com/DrDoker/Mistrz_Pisania/blob/master/Readme/Screenshot_4.png)
 
+## Test
+![Иллюстрация к проекту](https://github.com/DrDoker/Mistrz_Pisania/blob/master/Readme/Screenshot_5.png)
+
+## Test Result
+![Иллюстрация к проекту](https://github.com/DrDoker/Mistrz_Pisania/blob/master/Readme/Screenshot_6.png)
+
 ## Info Page
 ![Иллюстрация к проекту](https://github.com/DrDoker/Mistrz_Pisania/blob/master/Readme/Screenshot_2.png)
